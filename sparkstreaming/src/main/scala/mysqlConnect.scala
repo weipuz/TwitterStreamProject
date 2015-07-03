@@ -14,11 +14,9 @@ object ScalaJdbcConnectSelect {
     // connect to the database named "mysql" on the localhost
     val driver = "com.mysql.jdbc.Driver"
     val url = "jdbc:mysql://hashtagdb.ctscqnvckzf1.us-east-1.rds.amazonaws.com:3306/hashtagDB"
-    val username = "weipuz"
-    val password = "twitterhashtag"
-    //val url = "jdbc:mysql://mysql14.000webhost.com/a6206192_db"
-    //val username = "a6206192_shijiel"
-    //val password = "123456lili"
+    val username = "#######"
+    val password = "#######"
+ 
 
  
     // there's probably a better way to do this

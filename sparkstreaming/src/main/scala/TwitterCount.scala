@@ -79,8 +79,8 @@ object TwitterCount {
 //for code demo only. will be invalid after the grading period.//
     val driver = "com.mysql.jdbc.Driver"
     val url = "jdbc:mysql://hashtagdb.ctscqnvckzf1.us-east-1.rds.amazonaws.com:3306/hashtagDB"
-    val username = "weipuz"
-    val password = "twitterhashtag"
+    val username = "#######"
+    val password = "#######"
 /*----------------------------------------*/
 
     var connection:Connection = null

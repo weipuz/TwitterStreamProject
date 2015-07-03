@@ -10,7 +10,7 @@ Also noted that the file hierarchy in the folder need to main unchanged. Or, to 
 
 2. command to submit the spark streaming application:
 
-spark-submit --class org.apache.spark.examples.streaming.TwitterCount --master local[4] target/scala-2.10/TwitterCount-assembly-1.0.jar ziS0SXmy3cKqNSu0n9xIYGtWw eRC26OYOFdIwCW76OzZupvZa51UwPTILIqgS6R6wI6LUtpIK2u 2832187939-ATv9XfdOFKU3NoQScnjxpTAGcwkBnouAN6jIMqJ c3fdNVanofyNCBZxoRHk2b8vTSwDq4ET3RNQ0829jcD0U
+spark-submit --class org.apache.spark.examples.streaming.TwitterCount --master local[4] target/scala-2.10/TwitterCount-assembly-1.0.jar <consumer key> <consumer secret> <access token> <access token secret> 
 
 3. command to check the MySQL data:
 ./scala -classpath "target/scala-2.10/TwitterCount-assembly-1.0.jar" org.apache.spark.examples.streaming.ScalaJdbcConnectSelect
