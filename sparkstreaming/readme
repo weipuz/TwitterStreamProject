@@ -1,0 +1,19 @@
+Before start, you need install sbt(simple build tool) to build the source code. I’m using set 0.13.8 and scala version 2.10.4. 
+The pre build version is over 5MB and cannot be uploaded. Please email me for any question.
+
+1. Go to the root folder which contains the build.sbt file, run:
+	sbt assembly
+to build a fat jar which contains all necessary library including the twitter utility.  
+Please modify the version in build.sbt to fit your spark version. 
+Also noted that the file hierarchy in the folder need to main unchanged. Or, to be specifically, the must be a file named assembly.sbt under project folder, and the source file must under src/main/scala/***.scala
+
+
+2. command to submit the spark streaming application:
+
+spark-submit --class org.apache.spark.examples.streaming.TwitterCount --master local[4] target/scala-2.10/TwitterCount-assembly-1.0.jar ziS0SXmy3cKqNSu0n9xIYGtWw eRC26OYOFdIwCW76OzZupvZa51UwPTILIqgS6R6wI6LUtpIK2u 2832187939-ATv9XfdOFKU3NoQScnjxpTAGcwkBnouAN6jIMqJ c3fdNVanofyNCBZxoRHk2b8vTSwDq4ET3RNQ0829jcD0U
+
+3. command to check the MySQL data:
+./scala -classpath "target/scala-2.10/TwitterCount-assembly-1.0.jar" org.apache.spark.examples.streaming.ScalaJdbcConnectSelect
+
+
+
