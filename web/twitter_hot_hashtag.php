@@ -1,9 +1,9 @@
 
 <?php
-$mysql_host = "hashtagdb.ctscqnvckzf1.us-east-1.rds.amazonaws.com:3306";
-$mysql_database = "hashtagDB";
-$mysql_user = "weipuz";
-$mysql_password = "twitterhashtag";
+$mysql_host = "###########";
+$mysql_database = "#######";
+$mysql_user = "#######";
+$mysql_password = "########";
 if (!$link = mysql_connect($mysql_host, $mysql_user, $mysql_password)) {
     echo 'Could not connect to mysql';
     exit;
